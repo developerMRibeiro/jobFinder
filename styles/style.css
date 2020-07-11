@@ -170,7 +170,7 @@ nav:after {
 }
 
 .wrapper {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     position: relative;
     margin-left: auto;
     margin-right: auto;
