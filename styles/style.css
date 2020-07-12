@@ -149,7 +149,7 @@ nav:after {
     margin: 0 10px;
 }
 
-#search-form input[type=submit] {
+#search-form input[type=submit], #sendjobs input[type=submit] {
     background-color: var(--blue-pattern);
     text-transform: uppercase;
     color: #FFF;
@@ -157,7 +157,7 @@ nav:after {
     transition: .5s;
 }
 
-#search-form input[type=submit]:hover {
+#search-form input[type=submit]:hover, #sendjobs input[type=submit]:hover {
     background-color: var(--secondary-blue);
 }
 
@@ -713,6 +713,71 @@ footer .wrapper:after {
     margin-left: .5em;
 }
 
+/* send jobs page */
+
+#sendjobs #sendjobs-container {
+    margin-top: 100px;
+    background: none;
+    padding: 5em 0;
+}
+
+
+#sendjobs h1 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.input-box {
+    margin-bottom: 2em;
+    width: 50%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sendjobs label {
+    text-transform: uppercase;
+    color: #666;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1em;
+}
+
+#sendjobs input, #sendjobs textarea, #sendjobs select {
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+#sendjobs input {
+    border-radius: 5px;
+    border: 1px solid #CCC;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#sendjobs textarea, #sendjobs select {
+    border: 1px solid #CCC;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+#sendjobs input[type=submit] {
+    width: 200px;
+    float: right;
+
+}
+
+.input-box:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
 /* responsive width: 1024px */
 
 @media screen and (max-width: 1024px) {
@@ -824,7 +889,7 @@ footer .wrapper:after {
 }
 
 
-/* responsive 425px */
+/* responsive 576px */
 
 @media screen and (max-width: 586px) {
     .nav-container .btn-menumobile {
@@ -941,10 +1006,21 @@ footer .wrapper:after {
         display: block;
         width: 100%;
     }
-} 
 
-@media screen and (width: 380) {
-    .company-box .company-info h3{
-        display: flex;
+    /* send jobs page */
+    #sendjobs #sendjobs-container {
+        padding: 2em 0;
     }
-}
+
+    #sendjobs h1 {
+        font-size: 2em;
+        width: 60%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .input-box {
+        width: 80%;
+    }
+} 
