@@ -761,6 +761,24 @@ footer .wrapper:after {
         padding-left: 2em;
         padding-right: 2em;
     }
+
+    /* find jobs page*/
+    #findjobs #search-form input[type=submit] {
+        margin-bottom: 0;
+    }
+
+    #findjobs #type-filter ul li {
+       width: 100%;
+       border-bottom: 1px solid #CCC;
+       /* nao ultrapassar a borda */
+       box-sizing: border-box;
+    }
+
+    #findjobs #type-filter ul li:last-child {
+       border-bottom: none;
+       border-right: none;
+     }
+
 }
 
 
@@ -924,3 +942,9 @@ footer .wrapper:after {
         width: 100%;
     }
 } 
+
+@media screen and (width: 380) {
+    .company-box .company-info h3{
+        display: flex;
+    }
+}
