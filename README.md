@@ -7,7 +7,7 @@ Study project created in HTML5 and CSS3.
 ![](https://github.com/developerMRibeiro/jobFinder/blob/master/assets/screenshot.png)
 
 
-#Seqarch page
+#Search page
 
 ![](https://github.com/ribeiro-matheus/jobFinder/blob/master/assets/search.png)
 
